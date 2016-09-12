@@ -55,6 +55,7 @@
 	rbc = rebase --continue
 	rbs = rebase --skip
 	h = help -a
+        unstage = reset HEAD
 	daily = help everyday
 	branches = branch -av
 	tags = tag -l
