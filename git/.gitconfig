@@ -1,11 +1,11 @@
 [user]
-	name = DaWen
-	email = dan.wendlandt@gmail.com
+	name =
+	email =
 [github]
 	user = da-wen
 [core]
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/dwendlandt/.gitignore_global
 [url "https://"]
 	insteadOf = git://
 [url "git://"]
@@ -55,9 +55,19 @@
 	rbc = rebase --continue
 	rbs = rebase --skip
 	h = help -a
-        unstage = reset HEAD
+  unstage = reset HEAD
 	daily = help everyday
 	branches = branch -av
 	tags = tag -l
 	remotes = remote -v
 	contributors = shortlog --summary --numbered
+	rprune = remote prune origin
+	merged = branch --merged
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/dwendlandt/.stCommitMsg
