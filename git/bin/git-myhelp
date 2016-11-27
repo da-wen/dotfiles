@@ -1,0 +1,55 @@
+#!/bin/sh
+
+display_help() {
+    echo "Help for all my commands and aliases" >&2
+    echo
+    echo "Commands:"
+    echo "   amend           Use the last commit message and amend your stuffs.     (git commit --amend -C HEAD)"
+    echo "   churn           Show commits per file stats"
+    echo "   cwd-info        Current working dir informations"
+    echo "   undo            Undo your last commit, but don't throw away your changes"
+    echo "   unpushed        Show the diff of everything you haven't pushed yet."
+    echo "   up              Like git-pull but show a short and sexy log of changes"
+    echo "   wtf             Displays the state of your repository in a readable, easy-to-scan format."
+    echo "                   It's useful for getting a summary of how a branch relates to a remote"
+    echo "                   server, and for wrangling many topic branches."
+    echo
+    echo
+    echo "Aliases:"
+    echo "   a               git add"
+    echo "   aa              git add --all"
+    echo "   ai              git add --interactive"
+    echo "   br              git branch -vv"
+    echo "   branches        git branch -av"
+    echo "   ci              git commit"
+    echo "   co              git checkout"
+    echo "   contributors    git shortlog --summary --numbered"
+    echo "   cp              git cherry-pick"
+    echo "   d               git diff --ignore-all-space"
+    echo "   daily           git help everyday"
+    echo "   dc              git diff --cached --ignore-all-space"
+    echo "   df              git diff"
+    echo "   dfc             git diff --cached"
+    echo "   h               git help -a"
+    echo "   lg              git log --graph --pretty=format:'something' --abbrev-commit --date=relative"
+    echo "   logp            git log -p"
+    echo "   merged          git branch --merged"
+    echo "   rb              git rebase"
+    echo "   rba             git rebase --abort"
+    echo "   rbc             git rebase --continue"
+    echo "   rbs             git rebase --skip"
+    echo "   remotes         git remote -v"
+    echo "   rprune          git remote prune origin"
+  	echo "   s               git status --short --branch"
+  	echo "   st              git status"
+  	echo "   sh              git stash"
+  	echo "   shl             git stash list"
+  	echo "   shp             git stash pop"
+    echo "   tags            git tag -l"
+    echo "   unstage         git reset HEAD"
+    echo
+}
+
+display_help
+
+exit 1
