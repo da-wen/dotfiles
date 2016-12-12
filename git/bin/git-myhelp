@@ -7,7 +7,7 @@ display_help() {
     echo "   amend           Use the last commit message and amend your stuffs.     (git commit --amend -C HEAD)"
     echo "   churn           Show commits per file stats"
     echo "   cwd-info        Current working dir informations"
-    echo "   undo            Undo your last commit, but don't throw away your changes" (git reset --soft HEAD^)
+    echo "   undo            Undo your last commit, but don't throw away your changes (git reset --soft HEAD^)" 
     echo "   unpushed        Show the diff of everything you haven't pushed yet."
     echo "   up              Like git-pull but show a short and sexy log of changes"
     echo "   wtf             Displays the state of your repository in a readable, easy-to-scan format."

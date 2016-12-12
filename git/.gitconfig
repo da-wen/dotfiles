@@ -1,8 +1,10 @@
 [user]
-	name =
-	email =
+	name = dawen
+	email = dan.wendlandt@gmail.com
 [github]
 	user = da-wen
+[github]
+	user = dawen
 [core]
 	autocrlf = input
 	excludesfile = /Users/dwendlandt/.gitignore_global
