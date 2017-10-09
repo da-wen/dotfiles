@@ -7,7 +7,7 @@
 	user = dawen
 [core]
 	autocrlf = input
-	excludesfile = /Users/dwendlandt/.gitignore_global
+	excludesfile = /Users/dawen/.gitignore_global
 [url "https://"]
 	insteadOf = git://
 [url "git://"]
@@ -72,4 +72,4 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/dwendlandt/.stCommitMsg
+	template = /Users/dawen/.stCommitMsg
